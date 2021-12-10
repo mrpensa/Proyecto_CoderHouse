@@ -115,7 +115,7 @@ main{
     grid-area: footer;
     display: flex;
     padding: 20px 40px;
-    background-color: #005b9f;
+    background-image: linear-gradient(to left, #c2c5aa, #333d29 );
 }
 
 .footer__contenedor{
