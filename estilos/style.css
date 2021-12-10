@@ -16,7 +16,7 @@ body{
 
 .header{
     grid-area: header;
-
+    background-image: linear-gradient(to top, #e85d04, #03071e );
     display: flex;
     align-items: center;
     justify-content: space-between;
