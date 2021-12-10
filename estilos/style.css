@@ -16,7 +16,7 @@ body{
 
 .header{
     grid-area: header;
-    background-color: #005b9f;
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,6 +67,11 @@ body{
     padding: 20px 12px;
     border-radius: 100px;
     cursor: pointer;
+    transition: heigth 2s, width 1s;
+}
+
+.boton:hover{
+    height: 80px; width: 150px;
 }
 
 main{
@@ -94,6 +99,10 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.tamanioImg:hover{
+    background-color: black;
 }
 
 .separador{
