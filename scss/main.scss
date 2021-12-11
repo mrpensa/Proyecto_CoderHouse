@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    display: grid; 
+    grid-template-rows: 2fr auto 2fr;
+    height: 100vh; 
+    grid-template-areas: "header""main""footer"    
+  }
+
+.header{
+    grid-area: header;
+    background-image: linear-gradient(to top, #e85d04, #03071e );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.header__lista{
+    display: flex;
+    height: 80px;
+}
+
+.header__item{
+    color: #efefef;
+    margin: 20px 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.hero{
+    background-image: url("../img/avion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.hero__contenedor{
+    position: relative;
+    padding: 20px 15px;
+    padding: 0px 220px;
+    border-radius: 15px; 
+}
+
+.hero__titulo{
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    color: coral;  
+}
+
+.boton{    
+    background-color: darkblue;
+    border: none; 
+    justify-content: center;
+    color: darkgoldenrod;
+    padding: 20px 12px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: heigth 2s, width 1s;
+}
+
+.boton:hover{
+    height: 80px; width: 140px;
+}
+
+main{
+    grid-area: main;
+}
+
+.main__cuerpo{
+    background-color: #9c6644;
+    padding: 40px 60px;
+    color: #efefef;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    text-align: center;
+}
+
+.main__contenedor{
+    background-color: aquamarine;
+    display: grid; 
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    padding: 80px 80px;
+}
+
+.tamanioImg{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tamanioImg:hover{
+    background-color: black;
+}
+
+.separador{
+    border: none;
+    height: 10px;
+    background-color: black;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    padding: 20px 40px;
+    background-image: linear-gradient(to left, #c2c5aa, #333d29 );
+}
+
+.footer__contenedor{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 50px;
+    justify-content: space-around;
+}
+
+.footer__formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__formulario__etiqueta{
+    padding: 5px 0px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.footer__item{
+    padding: 5px 0px;
+    color: #efefef;
+}
+
+.main__final{
+    background-color: #9c6644;
+    padding: 50px 30px;
+    text-align: center;
+    color: white;
+}
+
+.imgLogo{
+    border-radius: 10%;
+    width: 80px;
+    height: 80px;
+}
+
+.mensajeria{
+    border-radius: 10%;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* CSS DE PAGINAS */
+
+.main__paginas{
+    background-color: #e85d04;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__contenedor__paginas{
+    text-align: center;
+    padding: 20px;
+}
+
+.year{
+    width: 100%;
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+    background: cornflowerblue;
+}
+.container{
+
+    border: 1px solid #ddd;
+    padding: 1rem;   
+    background: #fff;
+}
+.title{
+    text-align: center;
+    margin: .2rem 0;
+    color: #232323;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+}
+.day{
+    list-style: none;
+    text-align: right;
+    padding: .3rem .5rem;
+    color: #444;
+    font-size: .7rem;
+}
+.day-name{
+    background: #eee;
+    font-weight: 700;
+    text-align: center;
+}
+.first-day{
+    grid-column-start: 5;
+}
+.first-day-abr{
+    grid-column-start: 4;
+}
+.first-day-may{
+    grid-column-start: 6;
+}
+.first-day-jun{
+    grid-column-start: 2;
+}
+.first-day-jul{
+    grid-column-start: 4;
+}
+.first-day-ago{
+    grid-column-start: 7;
+}
+.first-day-sep{
+    grid-column-start: 3;
+}
+.first-day-oct{
+    grid-column-start: 5;
+}
+.first-day-dic{
+    grid-column-start: 3;
+}
+
+    /* MEDIA QUERIES */
+
+    /* INDEX */
+@media screen and (max-width: 425px) {
+    .hero__contenedor {
+            position: relative;
+            padding: 20px 15px;
+            border-radius: 15px;        
+    }
+    .hero__titulo {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.5rem;
+        color: coral;
+    }
+    .header__lista{
+        flex-direction: column;
+    }
+   .header{
+      height: 150px; 
+      justify-content: center;
+      align-content: flex-start;
+      gap: 40px;
+   }
+   .main__contenedor{
+       grid-template-columns: auto auto;
+       grid-template-rows: auto auto auto;
+       padding: 10px 10px;
+   }
+
+    }
+    
+@media screen and (min-width: 768px){
+    
+    .header__lista{        
+        flex-direction: row;
+        padding: 10px 0px;
+    }
+    .header{
+        justify-content: center;
+        align-content: center;           
+     }    
+   }
+
+@media screen and (min-width: 1024px){
+    .header{
+        grid-area: header;
+        background-color: #005b9f;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5px;
+        flex-wrap: wrap;
+    }
+    
+    .header__lista{
+        display: flex;
+        height: 80px;
+    }
+   }
+
+   /* PAGINAS */
+
+@media screen and (max-width: 768px) {
+    .year{       
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .year{       
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        padding: 0px 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .year{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+}
+
+@media screen and (min-width: 1044px) {
+    .year{
+        width: 100%;
+        padding: 3rem 5rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 2rem;
+        background: cornflowerblue;
+    }
+}
