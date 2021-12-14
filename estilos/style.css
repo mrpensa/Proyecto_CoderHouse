@@ -86,13 +86,14 @@ main{
     text-align: center;
 }
 
+/*  CONTENEDOR HECHO CON GRID, SE CAMBIO A BOOTSTRAP, ERA EL CONTENEDOR DE LAS IMAGENES LINKEABLES
 .main__contenedor{
     background-color: aquamarine;
     display: grid; 
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
     padding: 80px 80px;
-}
+}*/
 
 .tamanioImg{
     padding: 5px;
@@ -167,12 +168,14 @@ main{
 
 /* CSS DE PAGINAS */
 
+/*  CAMBIO DE GRID A BOOTSTRAP
 .main__paginas{
     background-color: #e85d04;
     padding: 50px 30px;
     display: flex;
     flex-direction: column;
-}
+}*/
+
 
 .titulo__contenedor__paginas{
     text-align: center;
