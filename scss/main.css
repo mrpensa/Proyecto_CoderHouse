@@ -7,6 +7,18 @@
   list-style: none;
 }
 
+.imgLogo {
+  border-radius: 10%;
+  width: 80px;
+  height: 80px;
+}
+
+.mensajeria {
+  border-radius: 10%;
+  width: 80px;
+  height: 80px;
+}
+
 .header {
   grid-area: header;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e85d04), to(#03071e));
@@ -174,17 +186,5 @@ main {
 .footer__item {
   padding: 5px 0px;
   color: #efefef;
-}
-
-.imgLogo {
-  border-radius: 10%;
-  width: 80px;
-  height: 80px;
-}
-
-.mensajeria {
-  border-radius: 10%;
-  width: 80px;
-  height: 80px;
 }
 /*# sourceMappingURL=main.css.map */
