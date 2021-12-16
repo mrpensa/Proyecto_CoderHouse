@@ -230,46 +230,12 @@ main {
   .header {
     height: 150px;
     justify-content: center;
-<<<<<<< HEAD
     align-content: flex-start;
     gap: 40px; }
   .main__contenedor {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
     padding: 10px 10px; } }
-=======
-    color: darkgoldenrod;
-    padding: 20px 12px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: heigth 2s, width 1s;
-}
-
-.boton:hover{
-    height: 80px; width: 140px;
-}
-
-main{
-    grid-area: main;
-}
-
-.main__cuerpo{
-    background-color: #9c6644;
-    padding: 40px 60px;
-    color: #efefef;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-    text-align: center;
-}
-
-/*  CONTENEDOR HECHO CON GRID, SE CAMBIO A BOOTSTRAP, ERA EL CONTENEDOR DE LAS IMAGENES LINKEABLES
-.main__contenedor{
-    background-color: aquamarine;
-    display: grid; 
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    padding: 80px 80px;
-}*/
->>>>>>> experimental
 
 @media screen and (min-width: 768px) {
   .header__lista {
@@ -290,44 +256,7 @@ main{
     flex-wrap: wrap; }
   .header__lista {
     display: flex;
-<<<<<<< HEAD
     height: 80px; } }
-=======
-    flex-direction: column;
-}
-
-.footer__formulario__etiqueta{
-    padding: 5px 0px;
-    margin: 10px;
-    text-transform: uppercase;
-}
-
-.footer__item{
-    padding: 5px 0px;
-    color: #efefef;
-}
-
-.main__final{
-    background-color: #9c6644;
-    padding: 50px 30px;
-    text-align: center;
-    color: white;
-}
-
-
-.imgLogo{
-    border-radius: 10%;
-    width: 80px;
-    height: 80px;
-}
-
-.mensajeria{
-    border-radius: 10%;
-    width: 80px;
-    height: 80px;
-}
-
->>>>>>> experimental
 
 /* PAGINAS */
 @media screen and (max-width: 768px) {
@@ -335,22 +264,11 @@ main{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto; } }
 
-<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .year {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
     padding: 0px 0px; } }
-=======
-/*  CAMBIO DE GRID A BOOTSTRAP
-.main__paginas{
-    background-color: #e85d04;
-    padding: 50px 30px;
-    display: flex;
-    flex-direction: column;
-}*/
-
->>>>>>> experimental
 
 @media screen and (min-width: 1024px) {
   .year {
