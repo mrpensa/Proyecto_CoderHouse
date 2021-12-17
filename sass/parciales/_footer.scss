@@ -1,7 +1,9 @@
+@import "./vars";
+
 .footer{
     display: flex;
     padding: 60px 40px;
-    background-color: #005b9f;
+    background-color: $fondoHeaderyFooter;
     &__contenedor{
         flex-basis: 100%;
         display: flex;
@@ -14,8 +16,8 @@
     
     &__imgLogo{
       border-radius: 10%;
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
     }
     
     &__formulario{
@@ -31,6 +33,7 @@
     
     &__item{
         padding: 5px 0px;
+        color: $letraBlanca;
     }
     
     &__contenido{

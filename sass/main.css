@@ -138,7 +138,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 60px 40px;
-  background-color: #005b9f;
+  background-color: linear-gradient(to top, #e85d04, #03071e);
 }
 
 .footer__contenedor {
@@ -164,8 +164,8 @@ body {
 
 .footer__imgLogo {
   border-radius: 10%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer__formulario {
@@ -186,6 +186,7 @@ body {
 
 .footer__item {
   padding: 5px 0px;
+  color: white;
 }
 
 .footer__contenido {
@@ -196,8 +197,8 @@ body {
 
 .mensajeria {
   border-radius: 10%;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
 }
 
 .separador {
