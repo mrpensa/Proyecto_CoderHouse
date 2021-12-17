@@ -1,0 +1,23 @@
+.hero {
+    background-image: url("../img/avion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 50vh; 
+
+    &__contenedor {
+        position: relative;
+        padding: 20px 15px;
+        padding: 0px 220px;
+        border-radius: 15px; }
+      
+    &__titulo {
+        font-family: 'Outfit', sans-serif;
+        font-size: 2rem;
+        color: coral; }
+}
+
+  

@@ -1,0 +1,26 @@
+.header {
+  grid-area: header;
+    background-image: linear-gradient(to top, #e85d04, #03071e);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    flex-wrap: wrap; 
+    
+    &__imgLogo{
+      height: 80px;
+      width: 80px;
+      }
+      
+    &__lista {
+        list-style: none;
+        display: flex;
+        height: 80px; 
+      }
+      
+    &__item {
+        color: #efefef;
+        margin: 20px 10px;
+        font-family: 'Outfit', sans-serif; 
+      }
+}

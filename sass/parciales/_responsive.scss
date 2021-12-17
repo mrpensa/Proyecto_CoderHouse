@@ -1,0 +1,96 @@
+/* MEDIA QUERIES */
+
+    /* INDEX */
+    @media screen and (max-width: 425px) {
+        .hero__contenedor {
+                position: relative;
+                padding: 20px 15px;
+                border-radius: 15px;        
+        }
+        .hero__titulo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: coral;
+        }
+        .header__lista{
+            flex-direction: column;
+        }
+       .header{
+          height: 150px; 
+          justify-content: center;
+          align-content: flex-start;
+          gap: 40px;
+       }
+       .main__contenedor{
+           grid-template-columns: auto auto;
+           grid-template-rows: auto auto auto;
+           padding: 10px 10px;
+       }
+    
+        }
+        
+    @media screen and (min-width: 768px){
+        
+        .header__lista{        
+            flex-direction: row;
+            padding: 10px 0px;
+        }
+        .header{
+            justify-content: center;
+            align-content: center;           
+         }    
+       }
+    
+    @media screen and (min-width: 1024px){
+        .header{
+            grid-area: header;
+            background-color: #005b9f;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5px;
+            flex-wrap: wrap;
+        }
+        
+        .header__lista{
+            display: flex;
+            height: 80px;
+        }
+       }
+    
+       /* PAGINAS */
+    
+    @media screen and (max-width: 768px) {
+        .year{       
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .year{       
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto auto;
+            padding: 0px 0px;
+        }
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .year{
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+        }
+        
+    }
+    
+    @media screen and (min-width: 1044px) {
+        .year{
+            width: 100%;
+            padding: 3rem 5rem;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 2rem;
+            background: cornflowerblue;
+        }
+    }

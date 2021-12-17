@@ -4,55 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style.css">
     <title>Vuelos.com</title>
-    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
-    <header class="header">        
-        <a href="../index.html" ><img class="imgLogo" src="../img/logo.jpg" alt="Logo"></a>
-            <nav class="header__nav">
-                        <ul class="header__lista">
-                        <li><a class="header__item" href="../index.html">Inicio</a></li>
-                        <li><a class="header__item" href="#">Mis compras</a></li>
-                        <li><a class="header__item" href="./ofertas.html">Ofertas</a></li>
-                        <li><a class="header__item"href="./sobreNosotros.html">Sobre nosotros</a></li>
-                        <li><a class="header__item"href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a class="header__item" href="./registro.html">Iniciar sesion / Registrarse</a></li>
-                    </ul>            
-            </nav>        
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./misCompras.html">Mis compras</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                <li> <a href="#">Iniciar sesion / Registrarse</a></li>
+            </ul>
+        </nav>   
     </header>
-    
-    <main class="main__paginas">
   
+    <main>
+
         <h1>Inicio de sesión</h1>
 
-      
-        
+        <br>
+        <div>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Inicio de sesion </legend>
+                        <label for="email"></label>
+                        <input type="text" name="direccionEmail" id="email" placeholder="Correo electronico">
+                            <br><br>
+                        <label for="password"></label>
+                        <input type="password" name="contraseña" id="password" placeholder="Contraseña">
+                            <br><br>
+                        <input type="button" value="Iniciar">
+                        <br><br>
+                        <a href="./olvidoDeCont.html">¿Olvidaste la contraseña?</a>
+                        <br><br><br>
+                        <input type="button" value="REGISTRARSE">
+                </fieldset>
+            </form>
+        </div>        
         
     </main>
 
-    <hr class="separador">
-   
-    <footer class="footer">
-        <div class="footer__contenedor">
-            <img class="mensajeria" src="../img/sobre.jpg" alt="sobre"> 
-            <form class="footer__formulario" action="#" method="get">
-                <label  for="registroEmail"><h2>Ofertas exclusivas en tu email</h2></label>
-                <input class="footer__formulario__etiqueta" type="text" name="email" id="registroEmail" placeholder="Ingresa tu email">
-                <input class="footer__formulario__etiqueta" type="submit" value="¡Quiero recibir ofertas!">    
+    <footer>
+        <hr>
+        <div>
+            <img class="mensajeria" src="../img/sobre.jpg" alt="sobre">
+            <form action="#" method="get">
+                <label for="registroEmail">Ofertas exclusivas en tu email</label>
+                <br>
+                <input type="text" name="email" id="registroEmail" placeholder="Ingresa tu email">
+                <input type="submit" value="¡Quiero recibir ofertas!">
+                <br>
+                <input type="checkbox" name="terminos" id="terminosOk">
+                <label for="terminosOk">He leído y acepto los terminos</label>
             </form>
         </div>
+        <br><br>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, suscipit alias dolor cum vitae eligendi voluptatum, delectus soluta unde odio eius ratione explicabo consequatur ex id ipsum accusantium iusto earum dolore! Natus recusandae ea suscipit magni quisquam, adipisci, ducimus nemo, facere rem rerum sit molestias porro ex ipsum nesciunt consectetur odio aut odit quis atque nisi! Reprehenderit dolore minus nulla?
+        </article>
 
-        <div class="footer__contenedor">
-                <a href="../index.html" ><img class="imgLogo" src="../img/logo.jpg" alt="Logo"></a>
-                <ul class="footer_lista">
-                        <li><a class="header__item" href="../index.html">Inicio</a></li>
-                        <li><a class="header__item" href="#">Mis compras</a></li>
-                        <li><a class="header__item" href="./ofertas.html">Ofertas</a></li>
-                        <li><a class="header__item"href="./sobreNosotros.html">Sobre nosotros</a></li>
-                        <li><a class="header__item"href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
-                        <li><a class="header__item" href="./registro.html">Iniciar sesion / Registrarse</a></li>
-                </ul>
+        <div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./misCompras.html">Mis compras</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="./preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                <li> <a href="#">Iniciar sesion / Registrarse</a></li>
+            </ul>
         </div>
 
     </footer>

@@ -1,8 +1,7 @@
 .footer{
-    grid-area: footer;
     display: flex;
-    padding: 20px 40px;
-    background-image: linear-gradient(to left, #c2c5aa, #333d29 );
+    padding: 60px 40px;
+    background-color: #005b9f;
     &__contenedor{
         flex-basis: 100%;
         display: flex;
@@ -13,19 +12,30 @@
         justify-content: space-around;
     }
     
+    &__imgLogo{
+      border-radius: 10%;
+      width: 150px;
+      height: 150px;
+    }
+    
     &__formulario{
         display: flex;
         flex-direction: column;
     }
     
     &__formulario__etiqueta{
-        padding: 5px 0px;
+        padding: 10px 0px;
         margin: 10px;
         text-transform: uppercase;
     }
     
     &__item{
         padding: 5px 0px;
-        color: #efefef;
+    }
+    
+    &__contenido{
+        background-color: #005b9f;
+        padding: 50px 30px;
+        text-align: center;
     }
 }
