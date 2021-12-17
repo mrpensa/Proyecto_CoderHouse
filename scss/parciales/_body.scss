@@ -4,3 +4,8 @@
     height: 100vh; 
     grid-template-areas: "header""main""footer"    
   }
+  main {
+    grid-area: main; }
+
+  .footer {
+      grid-area: footer;}

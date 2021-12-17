@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Outfit:wght@300&display=swap");
-.imgLogo {
-  border-radius: 10%;
-  width: 80px;
-  height: 80px;
-}
-
-.mensajeria {
-  border-radius: 10%;
-  width: 80px;
-  height: 80px;
-}
-
 * {
   margin: 0%;
   padding: 0%;
@@ -19,7 +7,30 @@
   list-style: none;
 }
 
+.body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr auto 2fr;
+      grid-template-rows: 2fr auto 2fr;
+  height: 100vh;
+      grid-template-areas: "header" "main" "footer";
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: header;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e85d04), to(#03071e));
   background-image: linear-gradient(to top, #e85d04, #03071e);
@@ -37,6 +48,12 @@
       flex-wrap: wrap;
 }
 
+.header__imgLogo {
+  border-radius: 10%;
+  width: 80px;
+  height: 80px;
+}
+
 .header__lista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,143 +65,5 @@
   color: #efefef;
   margin: 20px 10px;
   font-family: 'Outfit', sans-serif;
-}
-
-main {
-  grid-area: main;
-}
-
-.hero {
-  background-image: url("../img/avion.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: cover;
-  height: 50vh;
-}
-
-.hero__contenedor {
-  position: relative;
-  padding: 20px 15px;
-  padding: 0px 220px;
-  border-radius: 15px;
-}
-
-.hero__titulo {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2rem;
-  color: coral;
-}
-
-.boton {
-  background-color: darkblue;
-  border: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: darkgoldenrod;
-  padding: 20px 12px;
-  border-radius: 100px;
-  cursor: pointer;
-  -webkit-transition: heigth 2s, width 1s;
-  transition: heigth 2s, width 1s;
-}
-
-.boton:hover {
-  height: 80px;
-  width: 140px;
-}
-
-.main__cuerpo {
-  background-color: #9c6644;
-  padding: 40px 60px;
-  color: #efefef;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-}
-
-.tamanioImg {
-  padding: 5px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.tamanioImg:hover {
-  background-color: black;
-}
-
-.separador {
-  border: none;
-  height: 10px;
-  background-color: black;
-}
-
-.main__final {
-  background-color: #9c6644;
-  padding: 50px 30px;
-  text-align: center;
-  color: white;
-}
-
-.footer {
-  grid-area: footer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 40px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#c2c5aa), to(#333d29));
-  background-image: linear-gradient(to left, #c2c5aa, #333d29);
-}
-
-.footer__contenedor {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px 50px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.footer__formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer__formulario__etiqueta {
-  padding: 5px 0px;
-  margin: 10px;
-  text-transform: uppercase;
-}
-
-.footer__item {
-  padding: 5px 0px;
-  color: #efefef;
 }
 /*# sourceMappingURL=main.css.map */
