@@ -68,7 +68,11 @@ body{
     align-self: center;
     justify-content: center;
 }
-
+--------------------------------------------------
+.boton:hover{
+    transform: scale(1.2);
+    opacity: 50%;
+}
 .main__cuerpo{
     background-color: #9c6644;
     padding: 40px 60px;
@@ -78,7 +82,7 @@ body{
 }
 
 .main__contenedor{
-  background-color: aquamarine;
+  background-color: white;
   display: grid; 
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto auto;
@@ -92,6 +96,10 @@ body{
     height: 300px;
     margin-bottom: 30px;
     object-fit: cover;
+}
+-----------------------------------
+.tamanioImg:hover{
+    border: black solid 2px;
 }
 
 .contenidoFinal{
@@ -141,6 +149,7 @@ body{
 
 .footer__item{
     padding: 5px 0px;
+    color: #efefef;
 }
 
 
@@ -158,6 +167,88 @@ body{
 .main__paginas{
     background-color: #e85d04;
 }
+.main__paginas{
+    background-color: white;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__contenedor__paginas{
+    text-align: center;
+    padding: 20px;
+}
+
+.year{
+    width: 100%;
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+    background: white;
+}
+.container{    
+    border: 1px solid #ddd;
+    padding: 1rem;   
+    background: #fff;
+}
+.title{
+    text-align: center;
+    margin: .2rem 0;
+    color: #232323;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+}
+.day{
+    list-style: none;
+    text-align: right;
+    padding: .3rem .5rem;
+    color: #444;
+    font-size: .7rem;
+}
+.day-name{
+    background: #eee;
+    font-weight: 700;
+    text-align: center;
+}
+.first-day{
+    grid-column-start: 5;
+}
+.first-day-abr{
+    grid-column-start: 4;
+}
+.first-day-may{
+    grid-column-start: 6;
+}
+.first-day-jun{
+    grid-column-start: 2;
+}
+.first-day-jul{
+    grid-column-start: 4;
+}
+.first-day-ago{
+    grid-column-start: 7;
+}
+.first-day-sep{
+    grid-column-start: 3;
+}
+.first-day-oct{
+    grid-column-start: 5;
+}
+.first-day-dic{
+    grid-column-start: 3;
+}
+
+.boton__paginas{
+    margin-top: 30px;
+    align-self: center;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -252,6 +343,6 @@ body{
           grid-template-columns: auto auto auto auto;
           grid-template-rows: auto auto auto;
           grid-gap: 2rem;
-          background: cornflowerblue;
+          background: white;
       }
   }
