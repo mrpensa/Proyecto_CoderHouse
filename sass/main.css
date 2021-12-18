@@ -50,7 +50,7 @@ body {
 }
 
 .header__item {
-  color: #efefef;
+  color: white;
   margin: 20px 10px;
   font-family: 'Outfit', sans-serif;
 }
@@ -85,8 +85,14 @@ body {
   color: coral;
 }
 
+.inicio {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
 .main__contenedor {
-  background-color: aquamarine;
+  background-color: white;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto auto;
@@ -104,10 +110,18 @@ body {
   margin-bottom: 30px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all;
+  transition: all;
+}
+
+.tamanioImg:hover {
+  border: black solid 1px;
+  -webkit-transform: scale();
+          transform: scale();
 }
 
 .main__contenedor {
-  background-color: aquamarine;
+  background-color: white;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto auto;
@@ -128,9 +142,9 @@ body {
 }
 
 .contenidoFinal {
-  background-color: #005b9f;
   padding: 50px 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -138,7 +152,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 60px 40px;
-  background-color: linear-gradient(to top, #e85d04, #03071e);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e85d04), to(#03071e));
+  background-image: linear-gradient(to top, #e85d04, #03071e);
 }
 
 .footer__contenedor {
@@ -187,6 +202,7 @@ body {
 .footer__item {
   padding: 5px 0px;
   color: white;
+  font-family: 'Outfit', sans-serif;
 }
 
 .footer__contenido {

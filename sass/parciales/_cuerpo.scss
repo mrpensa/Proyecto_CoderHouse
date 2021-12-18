@@ -1,5 +1,7 @@
+@import "./vars";
+
 .main__contenedor{
-    background-color: aquamarine;
+    background-color: $blanca;
     display: grid; 
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
@@ -13,4 +15,10 @@
       height: 300px;
       margin-bottom: 30px;
       object-fit: cover;
-  }
+      transition: all;
+    &:hover{
+        border: black solid 1px;
+        transform: scale();
+    }
+    }
+

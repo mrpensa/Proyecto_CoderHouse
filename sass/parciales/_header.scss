@@ -1,7 +1,9 @@
+@import "./vars";
+
 .header {
   grid-area: header;
     background-image: linear-gradient(to top, #e85d04, #03071e);
-    display: flex;
+    display: $display;
     align-items: center;
     justify-content: space-between;
     padding: 10px 5px;
@@ -19,7 +21,7 @@
       }
       
     &__item {
-        color: #efefef;
+        color: $blanca;
         margin: 20px 10px;
         font-family: 'Outfit', sans-serif; 
       }

@@ -1,3 +1,5 @@
+@import "./vars";
+
 .hero {
     background-image: url("../img/avion.jpg");
     background-position: center;
@@ -20,4 +22,8 @@
         color: coral; }
 }
 
-  
+.inicio{
+    text-align: center;
+    text-transform: $letrasMayusculas;
+    margin-top: 50px;
+}  

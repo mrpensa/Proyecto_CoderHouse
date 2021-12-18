@@ -1,12 +1,12 @@
 @import "./vars";
 
 .footer{
-    display: flex;
+    display: $display;
     padding: 60px 40px;
-    background-color: $fondoHeaderyFooter;
+    background-image:$fondoHeaderyFooter;
     &__contenedor{
         flex-basis: 100%;
-        display: flex;
+        display: $display;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -21,7 +21,7 @@
     }
     
     &__formulario{
-        display: flex;
+        display: $display;
         flex-direction: column;
     }
     
@@ -33,8 +33,9 @@
     
     &__item{
         padding: 5px 0px;
-        color: $letraBlanca;
-    }
+        color: $blanca;
+        font-family: 'Outfit', sans-serif; 
+       }
     
     &__contenido{
         background-color: #005b9f;
