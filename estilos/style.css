@@ -167,12 +167,7 @@ body{
 .main__paginas{
     background-color: #e85d04;
 }
-.main__paginas{
-    background-color: white;
-    padding: 50px 30px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .titulo__contenedor__paginas{
     text-align: center;
