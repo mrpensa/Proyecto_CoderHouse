@@ -111,6 +111,14 @@
   color: #7400b8;
 }
 
+.textoFinalPaginas {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7400b8;
+}
+
 .carousel {
   width: 95%;
   margin-left: 2.5%;
@@ -261,6 +269,7 @@
   gap: 30px 50px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: center;
 }
 
 .footer__imgLogo {
