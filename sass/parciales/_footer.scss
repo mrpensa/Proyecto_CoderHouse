@@ -3,7 +3,7 @@
 .footer{
     display: $display;
     padding: 60px 40px;
-    background-image:$fondoHeaderyFooter;
+    background-color: $colorLetra;
     &__contenedor{
         flex-basis: 100%;
         display: $display;
@@ -38,8 +38,11 @@
        }
     
     &__contenido{
-        background-color: #005b9f;
         padding: 50px 30px;
         text-align: center;
     }
+}
+
+.textoEmail{
+    color: $blanca;
 }

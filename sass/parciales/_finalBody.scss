@@ -1,7 +1,14 @@
 @import "./vars";
 
-.contenidoFinal{
-    padding: 50px 40px;
-    text-align: center;
-    text-transform: $letrasMayusculas;
-  }
+.contenidoFinal {
+  padding: 50px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colorLetra;
+}
+
+.carousel {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 30px;
+}

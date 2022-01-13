@@ -1,30 +1,12 @@
 @import "./vars";
 
-.mensajeria{
+.imgLogo {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .mensajeria{
     border-radius: 10%;
     width: 80px;
-    height: 80px;
-}
-
-.separador{
-    border: none;
-    height: 10px;
-    background-color: black;
-}
-
-
-.boton {
-    background-color: darkblue;
-    border: none;
-    justify-content: center;
-    color: darkgoldenrod;
-    padding: 20px 12px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: heigth 2s, width 1s; 
-
-    &:hover {
-      transform: scale(1.2);
-    }
-}
-
+    height: 60px;
+  }

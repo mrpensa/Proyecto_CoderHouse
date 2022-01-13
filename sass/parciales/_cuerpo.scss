@@ -1,24 +1,8 @@
 @import "./vars";
 
-.main__contenedor{
-    background-color: $blanca;
-    display: grid; 
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    padding: 80px 80px;
-  }
-  
-  .tamanioImg{
-      margin-top: 30px;
-      padding: 30px 30px;
-      width: 500px;
-      height: 300px;
-      margin-bottom: 30px;
-      object-fit: cover;
-      transition: all;
-    &:hover{
-        border: black solid 1px;
-        transform: scale();
-    }
-    }
-
+.inicio {
+  padding: 50px 40px;
+  text-align: center;
+  text-transform: $letrasMayusculas;
+  color: $colorLetra;
+}
