@@ -75,7 +75,16 @@
     grid-column-start: 3;
 }
 
-.boton__paginas{
-    margin-top: 30px;
-    align-self: center;
+.contenedorBoton{
+    text-align: center;
+        padding: 20px 0px;
+        
+}
+
+.boton{    
+        @include boton(#7400b8, #f4f3ee);
+        
+        &:hover{
+          transform: scale(1.1);
+        }
 }

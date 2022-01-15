@@ -2,3 +2,25 @@ $display: flex;
 $letrasMayusculas: uppercase;
 $colorLetra: #7400b8;
 $blanca: white;
+$fondo: #00b4d8;
+
+
+//mixin
+@mixin boton($colorFondo, $color){
+  background-color: $colorFondo;
+  border: none;
+  justify-content: center;
+  padding: 20px 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: heigth 2s, width 1s;
+  font-size: 1rem;
+  color: $color;
+}
+
+//map
+
+$tamanio:(
+    'uno': 1rem,
+    'dos': 2rem
+);

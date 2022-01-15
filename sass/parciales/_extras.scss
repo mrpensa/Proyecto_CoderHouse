@@ -11,3 +11,16 @@
     height: 60px;
   }
   
+  
+.header__item{
+    background-color: $fondo;
+    color: $colorLetra;
+    border-radius: 10%;
+    padding: 0px 10px;
+
+    &:hover{
+      scale: (1);
+      background-color: #014f86;
+      color: #b298dc;
+    }
+}

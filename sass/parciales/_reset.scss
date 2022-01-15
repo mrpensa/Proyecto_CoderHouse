@@ -2,11 +2,15 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    list-style: none; }
+    list-style: none; 
+ }
 
+ a{
+  text-decoration: none;
+ }
 .padrePrincipal{
       display: grid;
-      grid-template-rows: 0.2fr 1fr 0.5fr auto 1fr 1fr;
+      
       background-color: white;
       grip-gap: 5px 5px;
 }

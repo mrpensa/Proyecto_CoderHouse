@@ -23,15 +23,7 @@
   } 
   
   .boton{    
-    background-color: #00b4d8;
-    border: none; 
-    justify-content: center;
-    color: darkgoldenrod;
-    padding: 20px 12px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: heigth 2s, width 1s;
-    font-size: 1rem;
+    @include boton(#00b4d8, #e36414);
     
     &:hover{
       transform: scale(1.1);
