@@ -24,3 +24,30 @@
       color: #b298dc;
     }
 }
+
+//boton de registro y olvido de contraseña
+
+.botonRegistro{    
+  @include boton(#7400b8, #f4f3ee);
+  
+    padding: 5px;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.parrafoExtra{
+    text-align: justify;
+    width: 80%;
+    color: black;
+    margin-left: 10%;
+    line-height: 200%;
+}
+
+.subTitulos{
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: $colorLetra;
+  text-decoration: underline;
+}

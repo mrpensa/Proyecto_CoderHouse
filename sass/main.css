@@ -66,7 +66,7 @@ a {
   color: #7400b8;
 }
 
-.boton {
+.botonIndex {
   background-color: #00b4d8;
   border: none;
   -webkit-box-pack: center;
@@ -78,10 +78,10 @@ a {
   -webkit-transition: heigth 2s, width 1s;
   transition: heigth 2s, width 1s;
   font-size: 1rem;
-  color: #e36414;
+  color: #7400b8;
 }
 
-.boton:hover {
+.botonIndex:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -353,6 +353,43 @@ a {
   color: #b298dc;
 }
 
+.botonRegistro {
+  background-color: #7400b8;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: heigth 2s, width 1s;
+  transition: heigth 2s, width 1s;
+  font-size: 1rem;
+  color: #f4f3ee;
+  padding: 5px;
+}
+
+.botonRegistro:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.parrafoExtra {
+  text-align: justify;
+  width: 80%;
+  color: black;
+  margin-left: 10%;
+  line-height: 200%;
+}
+
+.subTitulos {
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #7400b8;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   .padrePrincipal {
     -ms-grid-rows: 0.1fr 0.7fr 0.2fr auto auto auto 0.2fr 1fr;
@@ -584,6 +621,42 @@ a {
         grid-template-columns: auto auto auto auto;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__contenedor {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__imgLogo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .mensajeria {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .year {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[12];
+        grid-template-rows: repeat(12, auto);
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     grid-gap: 2rem;
   }
 }

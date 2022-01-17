@@ -164,3 +164,30 @@
             grid-gap: 2rem;
         }
     }
+
+    @media screen and (max-width: 425px) {
+    
+        .footer{
+            flex-direction: column;
+        }
+
+        .footer__contenedor{
+            align-items: baseline;
+        }
+
+        .footer__imgLogo{
+            align-self: center;
+        }
+
+        .mensajeria{
+            align-self: center;
+        }
+        
+        .year{
+            justify-content: center;
+            display: grid;
+            grid-template-rows: repeat(12, auto);
+            grid-template-columns: auto;
+            grid-gap: 2rem;
+        }
+    }

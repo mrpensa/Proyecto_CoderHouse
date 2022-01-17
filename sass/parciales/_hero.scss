@@ -22,8 +22,8 @@
     }
   } 
   
-  .boton{    
-    @include boton(#00b4d8, #e36414);
+  .botonIndex{    
+    @include boton($fondo, $colorLetra);
     
     &:hover{
       transform: scale(1.1);
