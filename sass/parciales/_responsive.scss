@@ -191,3 +191,9 @@
             grid-gap: 2rem;
         }
     }
+
+    @media screen and(max-width: 320px) {
+        .imgLogo{
+            width: 220px;
+        }
+    }

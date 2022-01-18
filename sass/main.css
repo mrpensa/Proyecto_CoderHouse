@@ -331,7 +331,7 @@ a {
 
 .imgLogo {
   height: 80px;
-  width: 80px;
+  width: 100%;
 }
 
 .mensajeria {
@@ -658,6 +658,12 @@ a {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .imgLogo {
+    width: 220px;
   }
 }
 /*# sourceMappingURL=main.css.map */
