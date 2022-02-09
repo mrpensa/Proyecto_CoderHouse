@@ -16,19 +16,18 @@ boton.addEventListener("click", validar);
 
 function validar(){
     
+    let cambioColor = document.getElementById("mensajeDeSalida").style.color = "#ff002b";
     let usuario = document.getElementById("usuario").value;
     let password = document.getElementById("contraseña").value;
-
-    if( document.getElementById("usuario").value == "" || document.getElementById("contraseña").value == "" ){
-        alert("Introduzca todos los datos");
-    }
   
     for(busqueda of usuarios){
         if(busqueda.nombre == usuario && busqueda.pass == password){
-            alert("Bienvenido " + busqueda.nombre);
+            document.getElementById("mensajeDeSalida").innerHTML = "Bienvenido " + busqueda.nombre;
+            cambioColor;
             return false;
         }else {
-            alert("nombre o cotraseña incorrectos");
+            document.getElementById("mensajeDeSalida").innerHTML = "nombre o cotraseña incorrectos";
+            cambioColor;
             return false;
         }
     }
