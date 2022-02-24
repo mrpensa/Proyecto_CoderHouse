@@ -390,6 +390,82 @@ a {
   text-decoration: underline;
 }
 
+.container {
+  width: 90%;
+  margin: 100px auto;
+  border: none;
+}
+
+.container-preguntas {
+  -webkit-box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.container-preguntas .title-preguntas {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.container-preguntas .item-preguntas {
+  -webkit-box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.container-preguntas .item-preguntas .question {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(43, 51, 122, 0.2);
+  padding: 20px 20px 20px 80px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.container-preguntas .item-preguntas .question .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.container-preguntas .item-preguntas .question .more:hover {
+  -webkit-box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.4);
+}
+
+.container-preguntas .item-preguntas .answer {
+  position: relative;
+  padding: 0 20px 0 80px;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 @media screen and (min-width: 768px) {
   .padrePrincipal {
     -ms-grid-rows: 0.1fr 0.7fr 0.2fr auto auto auto 0.2fr 1fr;
