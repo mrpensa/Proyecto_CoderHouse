@@ -392,7 +392,7 @@ a {
 
 .container {
   width: 90%;
-  margin: 100px auto;
+  margin: 10px auto;
   border: none;
 }
 
@@ -740,6 +740,12 @@ a {
 @media screen and (max-width: 320px) {
   .imgLogo {
     width: 220px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title-question {
+    margin-left: -35%;
   }
 }
 /*# sourceMappingURL=main.css.map */
