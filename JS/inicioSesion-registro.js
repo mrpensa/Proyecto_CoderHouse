@@ -15,7 +15,7 @@ let usuariosRegistrados = JSON.parse(localStorage.getItem("registro"));
 if(usuariosRegistrados.length > 0){
     usuarios = [...usuariosRegistrados, ...usuarios];
 }
-//espread operator
+
 let boton = document.getElementById("botonRegistro");
 if(boton) boton.addEventListener("click", nuevoUsuario);
 
@@ -29,8 +29,14 @@ function nuevoUsuario(){
     let nuevoDni = document.getElementById("nuevoDni").value;
     let nuevoEmail = document.getElementById("nuevoEmail").value;
 
-    
-    if((nuevaPass == verificacionPass)){
+     if(nuevoUsuario.length == 0 || nuevoDni.length == 0 || nuevoEmail.length == 0){
+        Swal.fire({
+            title: 'Error!',
+            text: 'No puedes dejar campos vacios',
+            icon: 'error',
+            timer: 1500
+        })
+    }    else if((nuevaPass == verificacionPass)){
         Swal.fire({
             position: 'top-center',
             icon: 'success',
@@ -44,8 +50,9 @@ function nuevoUsuario(){
         usuariosRegistrados = [usuarioARegistrar, ...usuariosRegistrados];
         localStorage.setItem("registro", JSON.stringify(usuariosRegistrados));
         usuarios.push(usuarioARegistrar);
+        location.reload();
         return false;
-    } else{
+    }else if(nuevaPass != verificacionPass ){
         Swal.fire({
             title: 'Error!',
             text: 'Las contraseñas no son iguales',
@@ -90,3 +97,10 @@ function validar(){
     }
 
 }
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then( (resp) => resp.json() )
+    .then( (data) => {
+        console.log( data[0].title )
+        console.log( data[0].body )
+    })

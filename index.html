@@ -105,9 +105,12 @@
             <img class="mensajeria" src="./img/sobre.jpg" alt="sobre"> 
             <form class="footer__formulario" action="#" method="get">
                 <label class="textoEmail"  for="registroEmail"><h2>Ofertas exclusivas en tu email</h2></label>
-                <input class="footer__formulario__etiqueta" type="text" name="email" id="registroEmail" placeholder="Ingresa tu email">
-                <input class="footer__formulario__etiqueta" type="submit" value="¡Quiero recibir ofertas!">    
+                <label for="emailSub" class="form-label"></label>
+                <input type="email" class="form-control" id="emailSub" name="txt6" placeholder="Ingrese su Email..."> 
+                <input style="font-family: serif;" class="footer__formulario__etiqueta" onclick="nuevoSub()" id="btnSub" type="button" value="¡Suscribirme!">    
             </form>
+
+
         </div>
 
         <div class="footer__contenedor">
@@ -126,7 +129,7 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script src="./JS/subscripcion.js"></script>
 
 </body>
 </html>
