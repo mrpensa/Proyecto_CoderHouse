@@ -43,7 +43,46 @@
         
         <h2 class="inicio__titulo"> Viaja como quieras y a donde quieras. </h2>           
         <p class="inicio__texto parrafoExtra">Encuentra las mejores ofertas de vuelos baratos. Permítanos ayudarlo a comenzar su búsqueda de tarifas aéreas económicas y ofertas de viajes. Ya sea que se trate de una escapada romántica de fin de semana, vacaciones familiares, un viaje de lista de deseos al destino de sus sueños o un viaje de negocios con un poco de diversión, lo tenemos cubierto. Encontrar boletos de avión baratos para vuelos nacionales e internacionales es lo que mejor hacemos.</p>
+
     </section>
+
+    <div class="clima">
+
+      <div class="cuerpo__clima">
+        <div class="app-title">
+            <p>Clima actual</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+                <div class="weather-card" id="card"></div>
+        <div class="date" id="date"></div>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location" id="ubicacion">
+                <p>-</p>
+            <p class="range" id="range"></p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="search-form">
+        <form id="search-form">
+          <div class="searchbox">
+            <input type="text" autocomplete="off" placeholder="Buscar ciudad..." class="search" id="searchbox" style="margin: 20px;" />
+          </div>
+        </form>
+    </div>
+
+    </div>
+    
 
             <div class="img1">
               <a href="./pages/argentina.html"> <img class="tamanioImg" src="img/argentina.jpg" alt="territorio argentino"></a>
@@ -130,6 +169,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./JS/subscripcion.js"></script>
+    <script src="JS/clima.js"></script>
 
 </body>
 </html>

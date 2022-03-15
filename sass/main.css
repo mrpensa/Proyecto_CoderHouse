@@ -466,10 +466,100 @@ a {
   transition: .4s;
 }
 
+* {
+  font-family: "Rimouski";
+}
+
+.cuerpo__clima {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 50px;
+  background-color: #293251;
+}
+
+.app-title {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.app-title p {
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: white;
+}
+
+.notification {
+  background-color: #f8d7da;
+  display: none;
+}
+
+.notification p {
+  color: #721c24;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.weather-container {
+  width: 300px;
+  height: 260px;
+}
+
+.weather-icon {
+  width: 300px;
+  height: 128px;
+}
+
+.weather-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value {
+  width: 300px;
+  height: 60px;
+}
+
+.temperature-value p {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.temperature-value span {
+  color: white;
+  font-size: 0.5em;
+}
+
+.temperature-description p {
+  padding: 8px;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.location p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
 @media screen and (min-width: 768px) {
   .padrePrincipal {
-    -ms-grid-rows: 0.1fr 0.7fr 0.2fr auto auto auto 0.2fr 1fr;
-        grid-template-rows: 0.1fr 0.7fr 0.2fr auto auto auto 0.2fr 1fr;
+    -ms-grid-rows: 0.1fr 0.7fr 0.2fr auto auto auto auto 0.2fr 1fr;
+        grid-template-rows: 0.1fr 0.7fr 0.2fr auto auto auto auto 0.2fr 1fr;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
@@ -497,63 +587,63 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+  .clima {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
   .img1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
   .img2 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
   .img3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
   }
   .img4 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
   }
   .img5 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 6;
+    -ms-grid-row: 7;
     -ms-grid-row-span: 1;
-    grid-row: 6/7;
+    grid-row: 7/8;
   }
   .img6 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
-    grid-row: 6/7;
-  }
-  .contenidoFinal {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7/8;
   }
-  .carousel {
+  .contenidoFinal {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -561,7 +651,7 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 8/9;
   }
-  .footer {
+  .carousel {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -569,12 +659,20 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 9/10;
   }
+  .footer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    grid-row: 10/11;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .padrePrincipal {
-    -ms-grid-rows: 0.1fr 0.5fr 0.2fr auto auto 0.2fr 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.2fr auto auto 0.2fr 1fr;
+    -ms-grid-rows: 0.1fr 0.5fr 0.2fr auto auto auto 0.2fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.2fr auto auto auto 0.2fr 1fr;
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
   }
@@ -602,63 +700,63 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+  .clima {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
   .img1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
   .img2 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
   .img3 {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
   .img4 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
   }
   .img5 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
   }
   .img6 {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    grid-row: 5/6;
-  }
-  .contenidoFinal {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
-  .carousel {
+  .contenidoFinal {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
@@ -666,13 +764,21 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 7/8;
   }
-  .footer {
+  .carousel {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
     grid-row: 8/9;
+  }
+  .footer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    grid-row: 9/10;
   }
 }
 
