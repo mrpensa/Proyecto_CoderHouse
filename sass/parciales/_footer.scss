@@ -48,3 +48,15 @@
 .textoEmail{
     color: $blanca;
 }
+
+.cuerpo__img{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.cuerpo__img2{
+    display: flex;
+    flex-basis: 100%;
+    height: 50vh;
+}
