@@ -12,7 +12,10 @@ function nuevoSub(){
             location.reload();
         }, 1500);
     }, 3000);
-
     
    
+}
+
+function redireccion(){
+    window.location.href = "../pages/registro.html";
 }

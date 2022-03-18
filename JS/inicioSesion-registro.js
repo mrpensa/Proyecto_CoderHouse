@@ -9,68 +9,14 @@ let usuarios = [
     {nombre: 'fausto', pass: "005", dni: 12314978, email: "fausto005@gmail.com"},
     {nombre: 'claudia', pass: "656", dni: 428358322, email: "claudia656@gmail.com"},
     {nombre: 'guillermo', pass: "666", dni: 67396032, email: "guille66@gmail.com"},
-]
-let usuariosRegistrados = JSON.parse(localStorage.getItem("registro"));
-
-if(usuariosRegistrados.length > 0){
-    usuarios = [...usuariosRegistrados, ...usuarios];
-}
-
-let boton = document.getElementById("botonRegistro");
-if(boton) boton.addEventListener("click", nuevoUsuario);
-
-
-function nuevoUsuario(){
-    
-
-    let nuevoUsuario = document.getElementById("nuevoUsuario").value;
-    let nuevaPass = document.getElementById("nuevaPass").value;
-    let verificacionPass = document.getElementById("verificacionPass").value;
-    let nuevoDni = document.getElementById("nuevoDni").value;
-    let nuevoEmail = document.getElementById("nuevoEmail").value;
-
-     if(nuevoUsuario.length == 0 || nuevoDni.length == 0 || nuevoEmail.length == 0){
-        Swal.fire({
-            title: 'Error!',
-            text: 'No puedes dejar campos vacios',
-            icon: 'error',
-            timer: 1500
-        })
-    }    else if((nuevaPass == verificacionPass)){
-        Swal.fire({
-            position: 'top-center',
-            icon: 'success',
-            title: 'Se ha completado el registro!!!',
-            showConfirmButton: false,
-            timer: 1500
-        })
-        const usuarioARegistrar = {nombre: nuevoUsuario, pass: nuevaPass, dni: nuevoDni, email: nuevoEmail};
-        
-        let usuariosRegistrados = JSON.parse(localStorage.getItem("registro"));
-        usuariosRegistrados = [usuarioARegistrar, ...usuariosRegistrados];
-        localStorage.setItem("registro", JSON.stringify(usuariosRegistrados));
-        usuarios.push(usuarioARegistrar);
-        location.reload();
-        return false;
-    }else if(nuevaPass != verificacionPass ){
-        Swal.fire({
-            title: 'Error!',
-            text: 'Las contraseñas no son iguales',
-            icon: 'error',
-            timer: 1500
-        })
-        return false;
-    }
-    
-}
-
+];
 
 function validar(){
         
     let usuario = document.getElementById("usuario").value;
     let password = document.getElementById("contraseña").value;
    
-    for(busqueda of usuarios){
+    for(busqueda of usuariosRegistrados){
         if(busqueda.nombre == usuario && busqueda.pass == password){            
             Swal.fire({
                 position: 'top-center',
@@ -96,4 +42,57 @@ function validar(){
         }
     }
 
+};
+
+let boton = document.getElementById("botonRegistro")
+
+if(boton) boton.addEventListener("click", nuevoUsuario)
+
+let usuariosRegistrados = JSON.parse(localStorage.getItem("registro"));
+
+function nuevoUsuario(){
+    
+    if(usuariosRegistrados.length > 0){
+        usuarios = [...usuariosRegistrados, ...usuarios];
+    }
+    
+
+    let nuevoUsuario = document.getElementById("nuevoUsuario").value;
+    let nuevaPass = document.getElementById("nuevaPass").value;
+    let verificacionPass = document.getElementById("verificacionPass").value;
+    let nuevoDni = document.getElementById("nuevoDni").value;
+    let nuevoEmail = document.getElementById("nuevoEmail").value;
+
+     if(nuevoUsuario.length == 0 || nuevoDni.length == 0 || nuevoEmail.length == 0){
+        Swal.fire({
+            title: 'Error!',
+            text: 'No puedes dejar campos vacios',
+            icon: 'error',
+            timer: 1500
+        })    
+    }else if(nuevaPass != verificacionPass ){
+        Swal.fire({
+            title: 'Error!',
+            text: 'Las contraseñas no son iguales',
+            icon: 'error',
+            timer: 1500
+        })
+        return false;
+    }    else {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Se ha completado el registro!!!',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        const usuarioARegistrar = {nombre: nuevoUsuario, pass: nuevaPass, dni: nuevoDni, email: nuevoEmail};
+        
+        let usuariosRegistrados = JSON.parse(localStorage.getItem("registro"));
+        usuariosRegistrados = [usuarioARegistrar, ...usuariosRegistrados];
+        localStorage.setItem("registro", JSON.stringify(usuariosRegistrados));
+        usuarios.push(usuarioARegistrar);
+        location.reload();
+    
+    }
 }

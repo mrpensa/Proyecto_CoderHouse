@@ -107,33 +107,27 @@ async function search(query) {
     switch (data.weather[0].main) {
         case 'Thunderstorm':
             iconElement.innerHTML = `<img src="../img/icons/11d.png"/>`;
-          console.log('TORMENTA');
           break;
         case 'Drizzle':
             iconElement.innerHTML = `<img src="../img/icons/09d.png"/>`;
-          console.log('LLOVIZNA');
           break;
         case 'Rain':
             iconElement.innerHTML = `<img src="../img/icons/10d.png"/>`;
-          console.log('LLUVIA');
           break;
         case 'Snow':
             iconElement.innerHTML = `<img src="../img/icons/13d.png"/>`;
-            console.log('NIEVE');
           break;                        
         case 'Clear':
             iconElement.innerHTML = `<img src="../img/icons/01d.png"/>`;
           break;
         case 'wind':
             iconElement.innerHTML = `<img src="../img/icons/50d.png"/>`;
-            console.log('ATMOSFERA');
             break;  
         case 'Clouds':
             iconElement.innerHTML = `<img src="../img/icons/04d.png"/>`;
             break;  
         default:
             iconElement.innerHTML = `<img src="../img/icons/unknown.png"/>`;
-          console.log('por defecto');
       }
   } catch (err) {
   }
